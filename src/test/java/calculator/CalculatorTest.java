@@ -7,55 +7,55 @@ import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
 
-    @DisplayName("인자 두 개를 받아서 더한 값을 반환한다.")
+    @DisplayName("두개의 정수를 더한 결과를 반환할 수 있다.")
     @Test
     void testAdd() {
         // given
         Calculator calculator = new Calculator();
 
         // when
-        int result = calculator.add(1, 2);
+        int actual = calculator.add(3, 6);
 
         // then
-        assertEquals(3, result);
+        assertEquals(9, actual);
     }
 
-    @DisplayName("인자 두 개를 받아서 뺀 값을 반환한다.")
+    @DisplayName("두개의 정수를 뺀 결과를 반환할 수 있다.")
     @Test
     void testSubtract() {
         // given
         Calculator calculator = new Calculator();
 
         // when
-        int result = calculator.subtract(1, 2);
+        int actual = calculator.subtract(3, 6);
 
         // then
-        assertEquals(-1, result);
+        assertEquals(-3, actual);
     }
 
-    @DisplayName("인자 두 개를 받아서 곱한 값을 반환한다.")
+    @DisplayName("두개의 정수를 곱한 결과를 반환할 수 있다.")
     @Test
     void testMultiply() {
         // given
         Calculator calculator = new Calculator();
 
         // when
-        int result = calculator.multiply(1, 2);
+        int actual = calculator.multiply(3, 6);
 
         // then
-        assertEquals(2, result);
+        assertEquals(18, actual);
     }
 
-    @DisplayName("인자 두 개를 받아서 나눈 값을 반환한다.")
+    @DisplayName("두개의 정수를 나눈 결과를 반환할 수 있다.")
     @Test
     void testDivide() {
         // given
         Calculator calculator = new Calculator();
 
         // when
-        int result = calculator.divide(6, 3);
+        int actual = calculator.divide(6, 3);
 
         // then
-        assertEquals(2, result);
+        assertEquals(2, actual);
     }
 }
